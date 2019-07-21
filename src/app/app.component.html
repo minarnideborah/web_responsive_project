@@ -1,0 +1,257 @@
+<div class="page" style="background-color:#953E46">
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar-header">
+      <div class="container container-navbar-header">
+        <div class="row">
+          <div class=" col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12 navbar-header-title">
+            <h3><b>Social</b>Network</h3>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 search-view">
+            <div class="input-container">
+              <input type="text" placeholder="Find.." name="search" class="search-input">
+              <i class="material-icons icon">search</i>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-6 upload-view">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <button type="button" class="btn-upload pull-left">
+                  <span class="btn-text">
+                    <i class="material-icons">arrow_upward</i>&nbsp;
+                  </span>
+                  <span class="btn-text">Upload</span>
+                </button>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding-left: 10px">
+                <div class="row user-detail">
+                  <button type="button" class="btn-user pull-left">
+                    <span class="btn-text">
+                      <i class="material-icons">person</i>&nbsp;
+                    </span>
+                  </button>
+                  <div class="username">
+                    <p class="first-name">Waseem</p>
+                    <p class="last-name">Arshad</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar-menu">
+      <div class="container container-navbar-header">
+        <hr class="navbar-menu-separator-top "/>
+        <!-- HORIZONTAL MENU -->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="row">
+            <div *ngFor="let item of menu">
+              <p *ngIf="item.isLast !== true" class="list-menu">&nbsp; {{item.name}} &nbsp; &nbsp; / &nbsp;</p>
+              <p *ngIf="item.isLast === true" class="list-menu">&nbsp; {{item.name}} &nbsp; </p>
+            </div>
+          </div>
+        </div>
+        <hr/>
+      </div>
+    </nav>
+  </header>
+  <!--  -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
+        <div class="row">
+          <!-- TITLE VIDEOS AND DESC -->
+          <div class="col-sm-8">
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-sm-6 col-xs-12 menu-title px-1">Videos</div>
+              <div class="col-xl-6 col-lg-6 col-sm-6 col-xs-12 description text-right px-1">Browse all video</div>
+            </div>
+          </div>
+          <div class="col-sm-4"></div>
+        </div>
+      </div>
+      <!-- TITLE ACTIVITY AND DESC -->
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-sm-4 col-xs-12 menu-title px-20">Activity</div>
+          <div class="col-xl-8 col-lg-8 col-sm-8 col-xs-12 description text-right px-1">View timeline / Filter activities</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- LARGE VIDEO -->
+      <div class="col-xl-8 col-lg-8 col-sm-8 col-xs-12">
+        <div class="row">
+          <div class="col-xl-8 col-lg-8 col-sm-8 col-xs-12 px-1 pb-1">
+            <div *ngFor="let video of videos">
+              <a href="https://www.youtube.com/watch?v={{video.id.videoId}}" target="_blank">
+                <img [src]="video.snippet.thumbnails.medium.url" class="card-img-top" alt="..."></a>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-sm-6 col-xs-12 px-1">
+            <div *ngFor="let video of videos2_a_1" class=" pb-1">
+              <a href="https://www.youtube.com/watch?v={{video.id.videoId}}" target="_blank">
+                <img [src]="video.snippet.thumbnails.medium.url" class="card-img-top" alt="..."></a>
+            </div>
+          </div>
+          <div *ngFor="let video of videos2_a_2" class="col-xl-4 col-lg-4 col-sm-6 col-xs-12 px-1">
+            <a href="https://www.youtube.com/watch?v={{video.id.videoId}}" target="_blank">
+              <img [src]="video.snippet.thumbnails.medium.url" class="card-img-top" alt="..."></a>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-sm-6 col-xs-12 px-1">
+            <div *ngFor="let video of videos">
+              <a href="https://www.youtube.com/watch?v={{video.id.videoId}}" target="_blank">
+                <img [src]="video.snippet.thumbnails.medium.url" class="card-img-top" alt="..."></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MEDIUM VIDEO -->
+      <div class="col-xl-4 col-lg-4 col-sm-6 col-xs-12">
+        <hr class="title-separator"/>
+        <div *ngFor="let video of videos6" class="row activity-content">
+          <div class="col-xl-4 col-lg-4 col-sm-6 col-xs-12 px-1">
+            <div>
+              <a href="https://www.youtube.com/watch?v={{video.id.videoId}}" target="_blank">
+                <img [src]="video.snippet.thumbnails.medium.url" class="card-img-top" alt="..."></a>
+            </div>
+          </div>
+          <div class="col-xl-8 col-lg-8 col-sm-10 col-xs-12">
+            <p class="comment">{{video.snippet.title}}</p>
+          </div>
+        </div>
+        <hr class="title-separator-end"/>
+      </div>
+    </div>
+    <br> <br>
+    <div class="row">
+      <div class="col-xl-8 col-lg-8 col-sm-10 col-xs-12">
+        <div class="row">
+          <div class="col-xl-8 col-lg-8 col-sm-10 col-xs-12">
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-sm-10 col-xs-12 menu-title px-1">People</div>
+              <div class="col-xl-6 col-lg-6 col-sm-10 col-xs-12 description text-right px-1">View all</div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-sm-6 col-xs-12"></div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-sm-6 col-xs-12">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-sm-6 col-xs-12 px-1">
+              <div class="col-sm-6 menu-title px-1">Channels</div>
+          </div>
+          <div class="col-xl-8 col-lg-8 col-sm-10 col-xs-12 text-right px-1">
+            <div class="row">
+              <div class="col-sm-12 description text-right px-1">Browse channels</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-8 col-lg-8 col-sm-10 col-xs-12">
+        <div class="row">
+          <div class="col-xl-8 col-lg-8 col-sm-10 col-xs-12" style="padding-left: 10px">
+            <div *ngFor="let video of videos_2">
+              <a href="https://www.youtube.com/watch?v={{video.id.videoId}}" target="_blank">
+                <img [src]="video.snippet.thumbnails.medium.url" class="card-img-top" alt="..."></a>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-sm-6 col-xs-12 px-1">
+            <div *ngFor="let video of videos2_b_1" class=" pb-1">
+              <a href="https://www.youtube.com/watch?v={{video.id.videoId}}" target="_blank">
+                <img [src]="video.snippet.thumbnails.medium.url" class="card-img-top" alt="..."></a>
+            </div>
+          </div>
+          <div *ngFor="let video of videos2_b_2" class="col-xl-4 col-lg-4 col-sm-6 col-xs-12 px-1">
+            <a href="https://www.youtube.com/watch?v={{video.id.videoId}}" target="_blank">
+              <img [src]="video.snippet.thumbnails.medium.url" class="card-img-top" alt="..."></a>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-sm-6 col-xs-12 px-1">
+            <div *ngFor="let video of videos">
+              <a href="https://www.youtube.com/watch?v={{video.id.videoId}}" target="_blank">
+                <img [src]="video.snippet.thumbnails.medium.url" class="card-img-top" alt="..."></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-sm-6 col-xs-12">
+        <hr class="title-separator"/>
+        <div class="row">
+          <div *ngFor="let video of videos10" class="col-xl-6 col-lg-6 col-sm-8 col-xs-12 px-1">
+            <div>
+              <a href="https://www.youtube.com/watch?v={{video.id.videoId}}" target="_blank">
+                <img [src]="video.snippet.thumbnails.medium.url" class="card-img-top" alt="..."></a>
+            </div>
+          </div>
+        </div>
+        <hr class="title-separator-end"/>
+      </div>
+      <div class="col-xl-8 col-lg-8 col-sm-10 col-xs-12">
+        <div class="row">
+          <div class="col-xl-8 col-lg-8 col-sm-10 col-xs-12">
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-sm-8 col-xs-12 px-1">
+                <p class="menu-title">
+                  Document
+                </p>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-sm-8 col-xs-12 text-right px-1">
+                <p class="description">
+                  View all
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4"></div>
+        </div>
+      </div>
+      <div class="col-xl-8 col-lg-8 col-sm-10 col-xs-12">
+        <div class="row">
+          <div class="col-xl-8 col-lg-8 col-sm-10 col-xs-12 px-1 pb-1">
+            <div *ngFor="let video of videos_3">
+              <a href="https://www.youtube.com/watch?v={{video.id.videoId}}" target="_blank">
+                <img [src]="video.snippet.thumbnails.medium.url" class="card-img-top" alt="..."></a>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-sm-6 col-xs-12 px-1">
+            <div *ngFor="let video of videos2_c_1" class=" pb-1">
+              <a href="https://www.youtube.com/watch?v={{video.id.videoId}}" target="_blank">
+                <img [src]="video.snippet.thumbnails.medium.url" class="card-img-top" alt="..."></a>
+            </div>
+          </div>
+          <div *ngFor="let video of videos2_c_2" class="col-xl-4 col-lg-4 col-sm-6 col-xs-12 px-1">
+            <a href="https://www.youtube.com/watch?v={{video.id.videoId}}" target="_blank">
+              <img [src]="video.snippet.thumbnails.medium.url" class="card-img-top" alt="..."></a>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-sm-6 col-xs-12 px-1">
+            <div *ngFor="let video of videos">
+              <a href="https://www.youtube.com/watch?v={{video.id.videoId}}" target="_blank">
+                <img [src]="video.snippet.thumbnails.medium.url" class="card-img-top" alt="..."></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <hr/>
+    <!-- FOOTER -->
+    <footer>
+      <i class="fa fa-twitter-square"></i>
+      <i class="fa fa-linkedin-square"></i>
+      <i class="fa fa-facebook-square"></i>
+      <br/>
+      <br/>
+      <p class="footer-text">About &nbsp;&nbsp;/&nbsp;&nbsp;  For Business  &nbsp;&nbsp;/&nbsp;&nbsp;  Suggestions  &nbsp;&nbsp;/&nbsp;&nbsp;  Help & FAQs  &nbsp;&nbsp;/&nbsp;&nbsp;  Contacts  &nbsp;&nbsp;/&nbsp;&nbsp;  Pricing</p>
+      <br/>
+      <p class="footer-text">&#169; Copyright 2013 company name inc.</p>
+      <p class="footer-text">Privacy &nbsp;&nbsp;/&nbsp;&nbsp; Terms</p>
+    </footer>
+    <br/>
+  </div>
+</div>

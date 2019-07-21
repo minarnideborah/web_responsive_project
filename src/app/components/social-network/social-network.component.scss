@@ -1,0 +1,200 @@
+// .container {
+//     background-color: #953E46;
+// }
+
+p {
+    color: #F4E3CF;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    font-size: 12pt;
+    margin-bottom: 0;
+}
+
+.title-separator {
+    border-width: medium;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.header-row {
+    margin-top: 20px;
+}
+
+.search-view {
+    padding-right: 5px;
+}
+
+.search-input {
+    width: 85%;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #F4E3CF;
+    margin-left: 0;
+    border: inherit;
+}
+
+::placeholder {
+    color: #953E46;
+    padding-left: 10px;
+    font-weight: 500;
+    font-size: 11pt;
+}
+
+.upload-view {
+    padding-left: 0;
+}
+
+.btn-upload {
+    height: 40px;
+    margin-top: 20px;
+    background-color: #F4E3CF;
+    padding: 4px 8px 4px 8px;
+    color: #953E46;
+}
+
+.btn-text {
+    color: #953E46;
+    font-weight: 500;
+    font-size: 11pt;
+}
+
+.user-desc {
+    margin-top: 20px;
+    padding-left: 10px;
+    font-size: 12pt;
+}
+
+.user-desc .semi-bold {
+    font-size: 14pt;
+    font-weight: 300;
+}
+
+h3 {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    font-weight: 300;
+    color: #F4E3CF;
+    font-size: 30pt;
+    margin-top: 15px;
+}
+
+h4 {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+}
+
+.list-menu {
+    color: #F4E3CF;
+    padding-left: 7px;
+    margin-bottom: 0;
+}
+
+hr {
+    border-color: #F4E3CF;
+    color: #F4E3CF;
+}
+
+.menu-title {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    color: #F4E3CF;
+    font-size: 20pt;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.description {
+    margin-top: 15px;
+    color: #F4E3CF;
+    text-align: right;
+    margin-bottom: 0;
+    font-size: 10pt;
+}
+
+.video-frame-large, .video-frame-medium, .video-frame-small, .video-frame-extrasmall {
+    width: 100%;
+    background-color: #F4E3CF;
+    border: solid;
+    border-color: #F4E3CF;
+    margin-bottom: 16px;
+}
+
+.video-frame-medium-empty {
+    width: 100%;
+    background-color: #953E46;
+    border: solid;
+    border-color: #F4E3CF;
+    margin-bottom: 16px;
+    height: 167px;
+}
+
+.video-frame-large {
+    height: 350px;
+}
+
+.video-frame-medium {
+    height: 167px;
+}
+
+.video-frame-small {
+    height: 130px;
+    margin-bottom: 20px;
+}
+
+.video-frame-extrasmall {
+    // height: 70px;
+    height: 60px;
+    margin-bottom: 25px;
+}
+
+.comment {
+    color: #F4E3CF;
+    font-size: 13px;
+    margin-bottom: 7px;
+    margin-top: -4px;
+}
+
+.user-description {
+    padding-left: 0;
+}
+
+.semi-bold {
+    font-weight: 600;
+    font-size: 14.5px;
+}
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .icon {
+    padding: 10px;
+    background: #F4E3CF;
+    color: #953E46;
+    text-align: center;
+    height: 40px;
+    margin-top: 20px;
+  }
+
+  .video-frame-medium-icon {
+    color: #F4E3CF;
+    text-align: center;
+  }
+
+//   SETTINGS FOR PEOPLE & CHANNELS
+.people-channels {
+    margin-top: 10px;
+}
+
+// SETTINGS FOR ICON
+.fa-arrow-alt-circle-up {
+    font-size: 36px;
+    margin-top: 68px;
+    margin-bottom: 68px;
+    margin-left: 40px;
+    color: #F4E3CF;
+}
+
+.video-frame-medium-content {
+    margin-top: 62px;
+    margin-bottom: 52px;
+    color: #F4E3CF;
+}
